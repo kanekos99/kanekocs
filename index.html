@@ -37,24 +37,40 @@
     <link rel="icon" type="image/x-icon" href="./assets/confuse.png" />
   </head>
   <body>
-    <div class="main-body pb-5" id="main-body">
-      <div class="d-flex justify-content-between gallery-header px-4 py-3">
+    <div class="main-body" id="main-body">
+      <div
+        class="d-flex justify-content-between gallery-navbar px-4 py-2 align-items-center mt-2"
+      >
         <i
-          class="fa fa-bars"
+          class="fa fa-bars header-icon shadow"
           onClick="toggleSideMenu();"
           aria-hidden="true"
-          style="visibility: hidden"
+          style="display: none;"
         ></i>
-        <i class="fa fa-bell" aria-hidden="true"></i>
       </div>
-      <div class="justify-content-center gallery-title py-2 sticky-top">
-        kaneko's character gallery
+
+      <div class="d-flex flex-wrap justify-content-center align-items-center">
+        <img class="gallery-img me-3" src="assets/standee.png" />
+        <div class="shadow news-container">
+          <h1 class="news-heading py-2">
+            <i class="fa fa-bell me-2" aria-hidden="true"></i>what's new
+          </h1>
+          <div class="news-text-container px-4 pt-3 pb-2">
+            <p>
+              <b>12/09/2025</b>
+              <br /><br />
+              Created this oc gallery page and added card for Lunarverse
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="container gallery-container px-4 pb-5">
-        <div class="row justify-content-center pt-3">- select a world -</div>
-        <hr class="dotted-divider-2" />
+      <div class="container gallery-container pb-5">
+        <h1 class="py-2 gallery-header">
+          <i class="fa fa-star me-2" aria-hidden="true"></i>
+          kaneko's character gallery
+        </h1>
         <div
-          class="d-flex flex-wrap world-container justify-content-center align-items-center"
+          class="d-flex flex-wrap world-container justify-content-center align-items-center px-3 py-4"
         >
           <!--------------------------------lunarverse-------------------------------------->
           <div class="world-card fade-in">
