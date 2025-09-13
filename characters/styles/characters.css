@@ -65,7 +65,7 @@ body {
 }
 
 .accordion-container {
-  min-height: 90vh;
+  min-height: 94vh;
   border-left: 3px solid #fcf2e3;
   margin-left: 5%;
 }
@@ -109,4 +109,27 @@ body {
   .gallery-navbar {
     font-size: 1rem;
   }
+}
+
+/*--------------------------CUSTOM SCROLL BAR-------------------------------*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 25px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
