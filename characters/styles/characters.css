@@ -160,7 +160,6 @@ button.accordion-button.about-accordion-button:not(.collapsed) {
   }
 
   .accordion-container {
-    min-height: 200vh;
     border-left: 3px solid #fcf2e3;
     margin-left: 120px;
     /* border-right: 3px solid #fcf2e3; */
