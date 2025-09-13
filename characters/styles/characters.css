@@ -87,7 +87,7 @@ body {
   border-radius: 0px !important;
   color: #fcf2e3;
   border: 0px;
-  scroll-margin-top: 50px; 
+  scroll-margin-top: 50px;
 }
 
 .accordion-button {
@@ -112,7 +112,7 @@ body {
 }
 
 button.accordion-button.about-accordion-button {
-  background-color: #1a1a30;
+  background-color: #1a1a30c9;
   border-radius: 15px;
   color: #fcf2e3;
   border: 0px;
@@ -120,7 +120,7 @@ button.accordion-button.about-accordion-button {
 }
 
 button.accordion-button.about-accordion-button:not(.collapsed) {
-  background-color: #1a1a30;
+  background-color: #1a1a30c9;
   border-radius: 15px 15px 0px 0px;
   color: #fcf2e3;
   border: 0px;
@@ -152,9 +152,32 @@ button.accordion-button.about-accordion-button:not(.collapsed) {
   transition: 0.3s ease-in;
 }
 
+.character-box {
+  cursor: pointer;
+  background-color: #1a1a3080;
+  padding: 10px 10px 5px 10px;
+  border-radius: 10px;
+  margin: 10px;
+  border: 2px solid #fcf2e34a;
+}
+
+.character-pfp-box {
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+}
+
+.character-pfp-box img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 25px;
+  border: 2px solid #fcf2e379;
+}
+
 /*--------------------------Responsiveness-------------------------------*/
 
-@media only screen and (max-width: 898px) {
+@media only screen and (max-width: 945px) {
   .navigation-box {
     padding: 10px 25px 10px 25px !important;
   }
@@ -163,6 +186,11 @@ button.accordion-button.about-accordion-button:not(.collapsed) {
     border-left: 3px solid #fcf2e3;
     margin-left: 120px;
     /* border-right: 3px solid #fcf2e3; */
+  }
+
+  .character-row {
+    padding: 5px !important;
+    /* justify-content: center !important; */
   }
 }
 
@@ -180,6 +208,32 @@ button.accordion-button.about-accordion-button:not(.collapsed) {
 
   .navigation-box {
     display: none;
+  }
+
+  .character-box {
+    padding: 5px 5px 2px 5px;
+    border-radius: 5px;
+    margin: 5px;
+  }
+
+  .character-pfp-box {
+    width: 130px;
+    height: 130px;
+  }
+
+  .character-pfp-box img {
+    border-radius: 8px;
+  }
+
+  .accordion-body {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 357px) {
+  .character-pfp-box {
+    width: 120px;
+    height: 120px;
   }
 }
 
