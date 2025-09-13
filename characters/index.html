@@ -59,98 +59,173 @@
         </nav>
       </div>
 
-      <div class="accordion-container">
-        <div class="accordion">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#lunaris-panel"
-                aria-expanded="true"
-                aria-controls="lunaris-panel"
+      <div class="page-container">
+        <div class="navigation-box pt-3 px-5">
+          navigation
+          <div class="navigation-item">
+            <a href="#lunaris">the lunaris</a>
+          </div>
+          <div class="navigation-item">
+            <a href="#rhyll">the rhyll</a>
+          </div>
+          <div class="navigation-item">
+            <a href="#omrune">omrune</a>
+          </div>
+        </div>
+        <div class="accordion-container">
+          <div class="accordion">
+            <div class="accordion-item" id="lunaris">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#lunaris-panel"
+                  aria-expanded="true"
+                  aria-controls="lunaris-panel"
+                >
+                  the lunaris
+                </button>
+              </h2>
+              <div
+                id="lunaris-panel"
+                class="accordion-collapse collapse show"
+                aria-labelledby="lunaris-panel-heading"
               >
-                the lunaris
-              </button>
-            </h2>
-            <div
-              id="lunaris-panel"
-              class="accordion-collapse collapse show"
-              aria-labelledby="lunaris-panel-heading"
-            >
-              <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is
-                shown by default, until the collapse plugin adds the appropriate
-                classes that we use to style each element. These classes control
-                the overall appearance, as well as the showing and hiding via
-                CSS transitions. You can modify any of this with custom CSS or
-                overriding our default variables. It's also worth noting that
-                just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
+                <div class="accordion-body">
+                  <div class="about-accordion">
+                    <h2 class="about-accordion-header">
+                      <button
+                        class="accordion-button about-accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#lunaris-about-panel"
+                        aria-expanded="true"
+                        aria-controls="lunaris-about-panel"
+                      >
+                        about
+                      </button>
+                    </h2>
+                    <div
+                      id="lunaris-about-panel"
+                      class="about-accordion-collapse collapse"
+                      aria-labelledby="lunaris-about-panel-heading"
+                    >
+                      <div class="about-accordion-body pt-2 pb-4 px-4">
+                        The Lunaris are a race of nocturnal felines dwelling on
+                        the continent of Ailiya. Their main deity is the Silver
+                        Sage, Éthir, the founder and protector of their nation,
+                        who discovered/created the Moon Crystal (or Thiro
+                        Quarris) that gave them their magic and blessed their
+                        land. When Éthir disappeared, the Lunaris believed that
+                        their spirit was passed on to a new host, who is to
+                        become the new Silver Sage.
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#rhyll-panel"
-                aria-expanded="false"
-                aria-controls="rhyll-panel"
+            <div class="accordion-item" id="rhyll">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#rhyll-panel"
+                  aria-expanded="false"
+                  aria-controls="rhyll-panel"
+                >
+                  the rhyll
+                </button>
+              </h2>
+              <div
+                id="rhyll-panel"
+                class="accordion-collapse collapse show"
+                aria-labelledby="rhyll-panel-heading"
               >
-                the rhyll
-              </button>
-            </h2>
-            <div
-              id="rhyll-panel"
-              class="accordion-collapse collapse show"
-              aria-labelledby="rhyll-panel-heading"
-            >
-              <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth
-                noting that just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
+                <div class="accordion-body">
+                  <div class="about-accordion">
+                    <h2 class="about-accordion-header">
+                      <button
+                        class="accordion-button about-accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#rhyll-about-panel"
+                        aria-expanded="true"
+                        aria-controls="rhyll-about-panel"
+                      >
+                        about
+                      </button>
+                    </h2>
+                    <div
+                      id="rhyll-about-panel"
+                      class="about-accordion-collapse collapse"
+                      aria-labelledby="rhyll-about-panel-heading"
+                    >
+                      <div class="about-accordion-body pt-2 pb-4 px-4">
+                        The Dominion of Rhyll is a nation of canines dwelling on
+                        the continent of Ailiya. Despite being neighbours with
+                        the Lunaris, the two nations remained isolated until the
+                        Rhyll were faced with an existential threat. They
+                        worship the war god known as Yion and hold a yearly
+                        tournament in his name to determine their ranks. Most
+                        Rhyll are not capable of using magic.
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#omrune-panel"
-                aria-expanded="false"
-                aria-controls="omrune-panel"
+            <div class="accordion-item" id="omrune">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#omrune-panel"
+                  aria-expanded="false"
+                  aria-controls="omrune-panel"
+                >
+                  omrune
+                </button>
+              </h2>
+              <div
+                id="omrune-panel"
+                class="accordion-collapse collapse show"
+                aria-labelledby="omrune-panel-header"
               >
-                omrune
-              </button>
-            </h2>
-            <div
-              id="omrune-panel"
-              class="accordion-collapse collapse show"
-              aria-labelledby="omrune-panel-header"
-            >
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth
-                noting that just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
+                <div class="accordion-body">
+                  <div class="about-accordion">
+                    <h2 class="about-accordion-header">
+                      <button
+                        class="accordion-button about-accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#omrune-about-panel"
+                        aria-expanded="true"
+                        aria-controls="omrune-about-panel"
+                      >
+                        about
+                      </button>
+                    </h2>
+                    <div
+                      id="omrune-about-panel"
+                      class="about-accordion-collapse collapse"
+                      aria-labelledby="omrune-about-panel-heading"
+                    >
+                      <div class="about-accordion-body pt-2 pb-4 px-4">
+                        A realm with barren land and minimal natural resources,
+                        where slavery was not only prevalent, but crucial to the
+                        economy. That is, until a scrappy group of rebels, with
+                        the help of a dragon, started a coup and overthrew the
+                        tyrant king. The leader of the rebels, a former slave
+                        boy, instated himself as the new sovereign, appointing
+                        his friends and fellow rebels as members of his court.
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
