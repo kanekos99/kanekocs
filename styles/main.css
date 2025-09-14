@@ -287,6 +287,7 @@ h1 {
   line-height: 1;
   padding: 0px 40px 0px 40px;
   opacity: 0.7;
+  margin-bottom: 15px;
 }
 
 .world-card-back-button {
@@ -297,7 +298,8 @@ h1 {
   font-size: 1.1rem;
   border: 0px;
   outline: none;
-  padding: 5px 15px 5px 15px;
+  padding: 7px 15px 7px 15px;
+  text-decoration: none;
 }
 
 .world-card-back-button:hover {

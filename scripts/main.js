@@ -17,6 +17,3 @@ cards.forEach((card) => {
   });
 });
 
-function helpme(){
-  alert("coming soon!")
-}

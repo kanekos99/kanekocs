@@ -36,48 +36,58 @@
   <body>
     <div class="main-body" id="main-body">
       <div
-        class="d-flex justify-content-between gallery-navbar px-4 py-2 align-items-center sticky-top"
+        class="d-flex justify-content-between gallery-navbar px-4 align-items-center sticky-top"
       >
         <i
           class="fa fa-bars header-icon shadow"
           onClick="toggleSideMenu();"
           aria-hidden="true"
-          style="opacity: 0; pointer-events: none"
         ></i>
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb mb-0">
-            <li class="breadcrumb-item">
-              <a href="https://kanekos.neocities.org/">home</a>
-            </li>
-            <li class="breadcrumb-item">
-              <a href="../index.html">characters</a>
-            </li>
-            <li class="breadcrumb-item active" aria-current="page">
-              lunarverse <i class="fa fa-moon-o ms-2" aria-hidden="true"></i>
-            </li>
-          </ol>
-        </nav>
+        <div class="d-flex align-items-center py-2">
+          <i
+            class="fa fa-play me-3"
+            aria-hidden="true"
+            id="bg-music-btn"
+          ></i>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+              <li class="breadcrumb-item">
+                <a href="https://kanekos.neocities.org/">home</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="../index.html">characters</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                lunarverse <i class="fa fa-moon-o ms-2" aria-hidden="true"></i>
+              </li>
+            </ol>
+          </nav>
+        </div>
       </div>
 
       <div class="page-container">
-        <div class="navigation-box pt-3 px-5">
-          navigation
+        <div class="navigation-box pt-3 px-4">
+          <header>navigation</header>
           <div class="navigation-item">
+            <i class="fa fa-fighter-jet me-2 nav-icon" aria-hidden="true"></i>
             <a href="#lunaris">the lunaris</a>
           </div>
           <div class="navigation-item">
+            <i class="fa fa-fighter-jet me-2 nav-icon" aria-hidden="true"></i>
             <a href="#rhyll">the rhyll</a>
           </div>
           <div class="navigation-item">
+            <i class="fa fa-fighter-jet me-2 nav-icon" aria-hidden="true"></i>
             <a href="#omrune">omrune</a>
           </div>
         </div>
         <div class="accordion-container pb-5">
           <div class="accordion">
             <div class="accordion-item" id="lunaris">
-              <h2 class="accordion-header">
+              <h2 class="accordion-header d-flex">
+                <div class="button-deco"></div>
                 <button
-                  class="accordion-button"
+                  class="accordion-button main-accordion-button"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#lunaris-panel"
@@ -103,6 +113,7 @@
                         aria-expanded="true"
                         aria-controls="lunaris-about-panel"
                       >
+                        <i class="fa fa-book me-2" aria-hidden="true"></i>
                         about
                       </button>
                     </h2>
@@ -126,45 +137,46 @@
                   <div
                     class="d-flex flex-wrap justify-content-start px-4 pt-3 pb-2 character-row"
                   >
-                    <div class="character-box">
+                    <a href="" class="character-box">
                       <div class="character-pfp-box">
                         <img
                           class="character-pfp"
                           src="../assets/pfps/ailithir-pfp.png"
                         />
                       </div>
-                      <div><a href="">ailithir</a></div>
-                    </div>
-                    <div class="character-box">
+                      <div><p>ailithir</p></div>
+                    </a>
+                    <a href="" class="character-box">
                       <div class="character-pfp-box">
                         <img
                           class="character-pfp"
                           src="../assets/pfps/solius-pfp.png"
                         />
                       </div>
-                      <div><a href="">solius</a></div>
-                    </div>
-                    <div class="character-box">
+                      <div><p>solius</p></div>
+                    </a>
+                    <a href="" class="character-box">
                       <div class="character-pfp-box">
                         <img
                           class="character-pfp"
                           src="../assets/pfps/caden-pfp.png"
                         />
                       </div>
-                      <div><a href="">caden</a></div>
-                    </div>
+                      <div><p>caden</p></div>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
             <div class="accordion-item" id="rhyll">
-              <h2 class="accordion-header">
+              <h2 class="accordion-header d-flex">
+                <div class="button-deco"></div>
                 <button
-                  class="accordion-button"
+                  class="accordion-button main-accordion-button"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#rhyll-panel"
-                  aria-expanded="false"
+                  aria-expanded="true"
                   aria-controls="rhyll-panel"
                 >
                   the rhyll
@@ -186,6 +198,7 @@
                         aria-expanded="true"
                         aria-controls="rhyll-about-panel"
                       >
+                        <i class="fa fa-book me-2" aria-hidden="true"></i>
                         about
                       </button>
                     </h2>
@@ -208,27 +221,28 @@
                   <div
                     class="d-flex flex-wrap justify-content-start px-4 pt-3 pb-2 character-row"
                   >
-                    <div class="character-box">
+                    <a href="" class="character-box">
                       <div class="character-pfp-box">
                         <img
                           class="character-pfp"
                           src="../assets/pfps/ghost-pfp.png"
                         />
                       </div>
-                      <div><a href="">ghost</a></div>
-                    </div>
+                      <div><p>ghost</p></div>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
             <div class="accordion-item" id="omrune">
-              <h2 class="accordion-header">
+              <h2 class="accordion-header d-flex">
+                <div class="button-deco"></div>
                 <button
-                  class="accordion-button"
+                  class="accordion-button main-accordion-button"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#omrune-panel"
-                  aria-expanded="false"
+                  aria-expanded="true"
                   aria-controls="omrune-panel"
                 >
                   omrune
@@ -250,6 +264,7 @@
                         aria-expanded="true"
                         aria-controls="omrune-about-panel"
                       >
+                        <i class="fa fa-book me-2" aria-hidden="true"></i>
                         about
                       </button>
                     </h2>
@@ -272,15 +287,15 @@
                   <div
                     class="d-flex flex-wrap justify-content-start px-4 pt-3 pb-2 character-row"
                   >
-                    <div class="character-box">
+                    <a href="" class="character-box">
                       <div class="character-pfp-box">
                         <img
                           class="character-pfp"
                           src="../assets/pfps/sakar-pfp.png"
                         />
                       </div>
-                      <div><a href="">sakar</a></div>
-                    </div>
+                      <div><p>sakar</p></div>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -290,7 +305,10 @@
       </div>
     </div>
 
+    <audio id="bg-music" loop src="../assets/frozen-tides.mp3"></audio>
+
     <script src="../../common/scripts/sidemenu.js"></script>
     <script src="../scripts/main.js"></script>
+    <script src="./scripts/character.js"></script>
   </body>
 </html>

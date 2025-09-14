@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alice&display=swap");
+
 @font-face {
   font-family: afacad;
   src: url("../assets/fonts/Afacad-Regular.ttf");
@@ -13,6 +16,19 @@ body {
   color: #2b7379;
   font-family: afacad;
   font-size: 1.05rem;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../../assets/tarot-bg.png),
+    linear-gradient(to bottom, #2f2b64 0%, #fcf2e3 100%);
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-position: center top;
+  background-size: cover, cover;
+  text-align: center;
+  overflow-x: hidden;
 }
 
 a {
@@ -37,19 +53,6 @@ a {
   color: #fcf2e3;
 }
 
-body {
-  width: 100%;
-  min-height: 100vh;
-  background-image: url(../../assets/tarot-bg.png),
-    linear-gradient(to bottom, #2f2b64 0%, #fcf2e3 100%);
-  background-repeat: no-repeat, no-repeat;
-  background-attachment: fixed, fixed;
-  background-position: center top;
-  background-size: cover, cover;
-  text-align: center;
-  overflow-x: hidden;
-}
-
 .gallery-navbar {
   background-color: #2f2b64;
   color: #fcf2e3;
@@ -60,14 +63,19 @@ body {
   box-shadow: 2px 2px #1e1b42;
 }
 
-.header-icon {
+#bg-music-btn {
   cursor: pointer;
+  font-size: 0.8rem;
+  color: #fcf2e383;
 }
 
-.navigation-box {
+#bg-music-btn:hover {
   color: #fcf2e3;
-  text-align: left;
-  position: fixed;
+  transition: 0.2s ease-in-out;
+}
+
+.header-icon {
+  cursor: pointer;
 }
 
 .accordion-container {
@@ -90,9 +98,25 @@ body {
   scroll-margin-top: 50px;
 }
 
+.accordion-header {
+  border-bottom: 3px solid #fcf2e3;
+}
+
+.accordion-header:hover {
+  background-color: #1a1a3043;
+  transition: 0.3s ease-in-out;
+}
+
+.main-accordion-button {
+  padding: 20px 20px 5px 20px;
+}
+
 .accordion-button {
   color: #fcf2e3;
-  border-bottom: 3px solid #fcf2e3;
+  font-family: "Alice";
+  font-weight: 500;
+  font-size: 1.7rem;
+  text-shadow: #ffcc004c 1px 0 10px;
 }
 
 .accordion-button::after {
@@ -108,8 +132,13 @@ body {
   background-color: transparent;
   box-shadow: none;
   border-radius: 0px;
-  border-bottom: 3px solid #fcf2e3;
+  /* border-bottom: 3px solid #fcf2e3; */
 }
+
+/* .accordion-button:not(.collapsed):hover {
+  background-color: #1a1a3043;
+  transition: 0.3s ease-in-out;
+} */
 
 button.accordion-button.about-accordion-button {
   background-color: #1a1a30c9;
@@ -117,6 +146,9 @@ button.accordion-button.about-accordion-button {
   color: #fcf2e3;
   border: 0px;
   box-shadow: none;
+  padding: 10px 20px 10px 20px;
+  font-size: 1.2rem;
+  font-family: "Spectral";
 }
 
 button.accordion-button.about-accordion-button:not(.collapsed) {
@@ -127,6 +159,13 @@ button.accordion-button.about-accordion-button:not(.collapsed) {
   box-shadow: none;
 }
 
+.button-deco {
+  width: 40px;
+  height: 40px;
+  background-color: #fcf2e3;
+  margin-top: 25px;
+}
+
 .about-accordion {
   background-color: #1a1a3087;
   border-radius: 15px;
@@ -135,21 +174,48 @@ button.accordion-button.about-accordion-button:not(.collapsed) {
 
 .about-accordion-body {
   text-align: justify;
+  font-family: "Cormorant Garamond";
+  line-height: 1.2;
+  font-size: 1.1rem;
+}
+
+.navigation-box {
+  color: #fcf2e3;
+  text-align: left;
+  position: fixed;
+  font-family: "Spectral";
+  font-size: 1.2rem;
+}
+
+.navigation-box header {
+  text-decoration: underline dotted #fcf2e377;
+  cursor: default;
+}
+
+.navigation-item {
+  font-size: 1rem;
+  color: #fcf2e3b9;
+  cursor: pointer;
+}
+
+.navigation-item .nav-icon {
+  display: none;
 }
 
 .navigation-item a {
-  color: #fcf2e3b9;
+  color: inherit;
 }
 
-.navigation-item a:hover {
+.navigation-item:hover,
+.navigation-item.active {
   color: #fcf2e3;
-  transition: 0.3s ease-in;
+  transform: scale(1.1);
+  transition: 0.2s ease-in;
 }
 
-.navigation-item:hover {
-  color: #fcf2e3a2;
-  transform: scale(1.1);
-  transition: 0.3s ease-in;
+.navigation-item.active .nav-icon {
+  display: inline-block;
+  transition: 0.2s ease-in;
 }
 
 .character-box {
@@ -161,10 +227,26 @@ button.accordion-button.about-accordion-button:not(.collapsed) {
   border: 2px solid #fcf2e34a;
 }
 
+.character-box:hover {
+  border: 2px solid #fcf2e3;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+}
+
+.character-box p {
+  font-family: "Spectral";
+  font-size: 1.1rem;
+  text-decoration: underline dotted #fcf2e377;
+  margin-bottom: 0px;
+  color: #fcf2e3;
+}
+
 .character-pfp-box {
   width: 180px;
   height: 180px;
   overflow: hidden;
+  margin-bottom: 5px;
 }
 
 .character-pfp-box img {
@@ -179,7 +261,12 @@ button.accordion-button.about-accordion-button:not(.collapsed) {
 
 @media only screen and (max-width: 945px) {
   .navigation-box {
-    padding: 10px 25px 10px 25px !important;
+    padding: 10px 25px 10px 15px !important;
+    font-size: 1rem;
+  }
+
+  .navigation-item {
+    font-size: 0.8rem;
   }
 
   .accordion-container {
@@ -219,6 +306,7 @@ button.accordion-button.about-accordion-button:not(.collapsed) {
   .character-pfp-box {
     width: 130px;
     height: 130px;
+    margin-bottom: 0px;
   }
 
   .character-pfp-box img {
@@ -227,6 +315,18 @@ button.accordion-button.about-accordion-button:not(.collapsed) {
 
   .accordion-body {
     padding: 10px;
+  }
+
+  .character-box a {
+    font-size: 0.8rem;
+  }
+
+  .breadcrumb-item::before {
+    display: none;
+  }
+
+  .breadcrumb-item:not(.active) {
+    display: none;
   }
 }
 
