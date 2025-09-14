@@ -26,7 +26,7 @@ body {
   background-repeat: no-repeat, no-repeat;
   background-attachment: fixed, fixed;
   background-position: center top;
-  background-size: cover, cover;
+  background-size: cover;
   text-align: center;
   overflow-x: hidden;
 }
