@@ -284,6 +284,7 @@ button.accordion-button.about-accordion-button:not(.collapsed) {
 @media only screen and (max-width: 500px) {
   .gallery-navbar {
     font-size: 1rem;
+    padding-right: 10px !important;
   }
 
   .accordion-container {
@@ -321,13 +322,17 @@ button.accordion-button.about-accordion-button:not(.collapsed) {
     font-size: 0.8rem;
   }
 
-  .breadcrumb-item::before {
+  .breadcrumb-item {
+    font-size: 0.9rem;
+  }
+
+  /* .breadcrumb-item::before {
     display: none;
   }
 
   .breadcrumb-item:not(.active) {
     display: none;
-  }
+  } */
 }
 
 @media only screen and (max-width: 357px) {
