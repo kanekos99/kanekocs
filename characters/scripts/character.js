@@ -21,14 +21,17 @@ function setActiveNav() {
     );
     if (activeLink) {
       activeLink.parentElement.classList.add("active");
+    } else {
+      items[0].classList.add("active");
     }
+  } else {
+    items[0].classList.add("active");
   }
 }
 
 setActiveNav();
 
 window.addEventListener("hashchange", setActiveNav);
-
 
 /*-----------------------------music--------------------------------*/
 
