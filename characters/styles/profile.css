@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alice&display=swap");
+
+@font-face {
+  font-family: afacad;
+  src: url("../assets/fonts/Afacad-Regular.ttf");
+}
+
+h1 {
+  color: #fcf2e3;
+  font-family: "Alice";
+}
+
+.profile-container {
+  min-height: 94vh;
+  border-left: 3px solid #fcf2e3;
+  margin-left: 180px;
+  /* border-right: 3px solid #fcf2e3; */
+}
+
+.profile-box {
+  background-color: #1a1a3092;
+  color: #fcf2e3;
+  border-radius: 25px;
+  border: 2px solid #fcf2e377;
+}
+
+/* .profile-main-image {
+  width: 24vw;
+  border: 3px solid #fcf2e384;
+  border-radius: 20px;
+} */
+
+.profile-main-image {
+  height: 110%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.profile-pic-container {
+  padding: 15px;
+  width: 30%;
+}
+
+.profile-pic-box {
+  height: 480px;
+  overflow: hidden;
+  border-radius: 25px;
+  border: 3px solid #fcf2e3af;
+}
+
+.intro-container {
+  width: 50%;
+}
+
+.intro-box {
+  position: relative;
+  padding: 2rem;
+  padding-top: 2.2rem;
+  font-family: "Cormorant Garamond";
+  font-size: 1.2rem;
+  max-height: 480px;
+}
+
+.intro-box p {
+  font-family: "Cormorant Garamond";
+  font-size: 1.2rem;
+  line-height: 1.2;
+  margin: 0px;
+  padding: 0px 10px 0px 10px;
+}
+
+.character-title {
+  position: absolute;
+  top: -3.2rem;
+  right: 15%;
+  transform: translateX(15%);
+  color: #fcf2e3ae;
+  text-shadow: #1a1a3080 1px 0 10px;
+}
+
+.character-title h2 {
+  font-size: 1.7rem;
+}
+
+.character-name {
+  position: absolute;
+  top: -1.7rem;
+  right: 15%;
+  transform: translateX(15%);
+  color: #fcf2e3;
+  text-shadow: #1a1a3080 1px 0 10px;
+}
+
+.character-name h1 {
+  font-size: 3rem;
+}
+
+.character-intro {
+  text-align: justify;
+  max-height: calc(450px * 0.5);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.dotted-divider-2 {
+  border-top: 5px dotted #fcf2e37a;
+}
+
+.basic-info-label {
+  background-color: #1a1a30d8;
+  padding: 0px 10px 0px 10px;
+  margin-right: 10px;
+  font-size: 1.3rem;
+}
+
+/*--------------------------CUSTOM SCROLL BAR for profile-box-------------------------------*/
+
+/* width */
+.character-intro::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.character-intro::-webkit-scrollbar-track {
+  background: transparent; /* removes the track background */
+}
+
+/* Handle */
+.character-intro::-webkit-scrollbar-thumb {
+  background: #1a1a3080;
+  border-radius: 25px;
+}
+
+/* Handle on hover */
+.character-intro::-webkit-scrollbar-thumb:hover {
+  background: #1a1a30be;
+}
+
+/*--------------------------Responsiveness-------------------------------*/
+
+@media only screen and (min-width: 1500px) {
+  .profile-main-image {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .profile-main-image {
+    width: 100%;
+    object-position: center 25%;
+  }
+
+  .profile-container {
+    border-left: 3px solid #fcf2e3;
+    margin-left: 120px;
+    /* border-right: 3px solid #fcf2e3; */
+  }
+
+  .profile-pic-container {
+    width: 90%;
+    margin: 10px;
+  }
+
+  .intro-container {
+    width: 90%;
+    margin: 10px;
+    margin-top: 45px;
+  }
+
+  .character-name {
+    top: -1.6rem;
+  }
+
+  .character-name h1 {
+    font-size: 3rem !important;
+  }
+
+  .profile-pic-box {
+    height: 400px;
+  }
+
+  .intro-box {
+    max-height: fit-content;
+    padding: 2rem 1rem 2rem 1rem;
+  }
+
+  .profile-intro-row {
+    padding-top: 20px !important;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .profile-container {
+    border-left: none;
+    border-right: 0px;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
+  .profile-main-image {
+    width: 83vw;
+    height: auto;
+  }
+
+  .profile-pic-container {
+    width: 90%;
+    margin: 10px;
+  }
+
+  .breadcrumb-item::before {
+    display: none;
+  }
+
+  .breadcrumb-item:not(.active) {
+    display: none;
+  }
+
+  .intro-container {
+    width: 90%;
+    margin: 10px;
+    margin-top: 45px;
+  }
+
+  .character-name {
+    top: -1.6rem;
+  }
+
+  .character-name h1 {
+    font-size: 3rem !important;
+  }
+
+  .profile-pic-box {
+    height: auto;
+  }
+
+  .basic-info-row {
+    margin-bottom: 0px !important;
+  }
+
+  .basic-info-col {
+    flex: 0 0 100% !important;
+    width: 100%;
+    margin-top: 8px;
+    padding: 0px;
+  }
+
+}
