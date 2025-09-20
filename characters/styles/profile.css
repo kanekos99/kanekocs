@@ -51,14 +51,38 @@ h1 {
   border: 3px solid #fcf2e3af;
 }
 
+.box-header {
+  position: absolute;
+  top: -1.7rem;
+  left: 3.5%;
+  transform: translateX(-3.5%);
+  color: #fcf2e3;
+  text-shadow: #1a1a3080 1px 0 10px;
+}
+
+.box-header h1 {
+  font-size: 3rem;
+}
+
+.story-box {
+  width: 82%;
+  padding: 2rem;
+}
+
+.story-content {
+  text-align: justify;
+  margin: 0px;
+  font-family: "Cormorant Garamond";
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
 .intro-container {
   width: 50%;
 }
 
 .intro-box {
-  position: relative;
   padding: 2rem;
-  padding-top: 2.2rem;
   font-family: "Cormorant Garamond";
   font-size: 1.2rem;
   max-height: 480px;
@@ -116,26 +140,61 @@ h1 {
   font-size: 1.3rem;
 }
 
-/*--------------------------CUSTOM SCROLL BAR for profile-box-------------------------------*/
+.relative-box {
+  position: relative;
+  padding-top: 2.5rem;
+}
+
+.collapse-story {
+  padding: 0rem 1rem 0rem 1rem;
+}
+
+.collapse-story.collapse:not(.show) {
+  display: -webkit-box;
+  line-clamp: 3;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.collapse-story.collapse.show {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.story-content a {
+  text-align: center;
+  margin: auto;
+  font-size: 1.2rem;
+  color: #fcf2e383;
+  cursor: pointer;
+}
+
+.story-content a:hover {
+  color: #fcf2e3;
+  transition: 0.3s ease-in-out;
+}
+
+/*-------rgb(252, 242, 227)----------CUSTOM SCROLL BAR for profile-box-------------------------------*/
 
 /* width */
-.character-intro::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 10px;
 }
 
 /* Track */
-.character-intro::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
   background: transparent; /* removes the track background */
 }
 
 /* Handle */
-.character-intro::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background: #1a1a3080;
   border-radius: 25px;
 }
 
 /* Handle on hover */
-.character-intro::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
   background: #1a1a30be;
 }
 
@@ -190,6 +249,10 @@ h1 {
   .profile-intro-row {
     padding-top: 20px !important;
   }
+
+  .story-box {
+    width: 90%;
+  }
 }
 
 @media only screen and (max-width: 510px) {
@@ -210,11 +273,15 @@ h1 {
     margin: 10px;
   }
 
-  .breadcrumb-item::before {
+  .breadcrumb-item:not(.active) {
     display: none;
   }
 
-  .breadcrumb-item:not(.active) {
+  .breadcrumb-item.previous-active {
+    display: inline;
+  }
+
+  .breadcrumb-item.previous-active::before {
     display: none;
   }
 
@@ -247,4 +314,12 @@ h1 {
     padding: 0px;
   }
 
+  .story-box {
+    padding: 2.2rem 10px 2rem 1rem;
+  }
+
+  .box-header {
+    left: 4%;
+    transform: translateX(4%);
+  }
 }
