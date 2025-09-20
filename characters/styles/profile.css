@@ -64,6 +64,39 @@ h1 {
   font-size: 3rem;
 }
 
+.box-subheader {
+  position: absolute;
+  top: 0.7rem;
+  right: 3.5%;
+  transform: translateX(3.5%);
+  color: #fcf2e3bc;
+  text-shadow: #1a1a3080 1px 0 10px;
+  cursor: pointer;
+}
+
+.box-subheader:hover {
+  color: #fcf2e3;
+  transition: 0.3s ease-in-out;
+}
+
+.box-subheader a {
+  font-size: 1rem;
+  font-family: "Alice";
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.trivia-box .box-header {
+  top: -1.2rem;
+  left: 5%;
+  transform: translateX(-5%);
+}
+
+.trivia-box .box-header h1 {
+  font-size: 2rem;
+}
+
 .story-box {
   width: 82%;
   padding: 2rem;
@@ -140,11 +173,6 @@ h1 {
   font-size: 1.3rem;
 }
 
-.relative-box {
-  position: relative;
-  padding-top: 2.5rem;
-}
-
 .collapse-story {
   padding: 0rem 1rem 0rem 1rem;
 }
@@ -173,6 +201,68 @@ h1 {
 .story-content a:hover {
   color: #fcf2e3;
   transition: 0.3s ease-in-out;
+}
+
+.gallery-box {
+  width: 82%;
+  padding: 2rem;
+}
+
+.gallery-box a {
+  font-size: 1rem;
+  font-family: "Alice";
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.gallery-thumbnail {
+  display: block;
+  flex-grow: 1;
+  flex-shrink: 1;
+  height: 11.25rem;
+  object-fit: cover;
+  object-position: 25% 12%;
+  margin: 2px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  background-color: #1a1a304b;
+  padding: 5px;
+  border: 2px solid #fcf2e377;
+  border-radius: 15px;
+}
+
+.gallery-thumbnail:hover {
+  transform: scale(1.05);
+}
+
+.relative-box {
+  position: relative;
+  padding-top: 2.5rem;
+}
+
+.profile-row {
+  scroll-margin-top: 50px;
+}
+
+.mb-gallery-btn {
+  font-size: 1.2rem !important;
+  cursor: pointer;
+  color: #fcf2e3d1;
+  display: none !important;
+}
+
+.mb-gallery-btn:hover {
+  color: #fcf2e3 !important;
+  transition: 0.3s ease-in-out;
+}
+
+.mb-gallery-divder {
+  display: none;
+}
+
+.trivia-box {
+  width: 41%;
 }
 
 /*-------rgb(252, 242, 227)----------CUSTOM SCROLL BAR for profile-box-------------------------------*/
@@ -253,6 +343,10 @@ h1 {
   .story-box {
     width: 90%;
   }
+
+  .gallery-box {
+    width: 90%;
+  }
 }
 
 @media only screen and (max-width: 510px) {
@@ -321,5 +415,22 @@ h1 {
   .box-header {
     left: 4%;
     transform: translateX(4%);
+  }
+
+  .gallery-box {
+    padding: 2.2rem 1rem 1rem 1rem;
+  }
+
+  .mb-gallery-btn {
+    display: inline-flex !important;
+    padding-bottom: 10px;
+  }
+
+  .mb-gallery-divder {
+    display: block;
+  }
+
+  .box-subheader {
+    display: none;
   }
 }
